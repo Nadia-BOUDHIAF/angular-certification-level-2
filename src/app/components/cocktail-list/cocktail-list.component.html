@@ -1,0 +1,26 @@
+<div class="filter-container">
+  <label><strong>Filters</strong></label>
+  <div class="filter-container">
+    <label>Cocktail Name</label>
+    <input type="text" (input)="onSearchInput($event)" placeholder="search" class="filter-input" />
+  </div>
+</div>
+
+
+<div class="cocktail-grid">
+  <div *ngFor="let cocktail of filteredCocktails()" class="cocktail-item">
+    <h3>
+      <a [routerLink]="['/cocktails', cocktail.id]">{{ cocktail.name }}</a>
+    </h3>
+    <img [src]="cocktail.imageUrl" alt="{{ cocktail.name }}" class="cocktail-image" />
+    <p><strong>{{ cocktail.isAlcoholic ? 'Alcoholic' : 'Non alcoholic' }}</strong> </p>
+    <div class="favorite-star">
+      <span class="icon-star" [class.active]="isFavorite(cocktail.id)" (click)="toggleFavorite(cocktail.id)"
+        id="star-{{ cocktail.id }}">
+      </span>
+    </div>
+    <ul>
+      <li *ngFor="let ingredient of cocktail.ingredients">{{ ingredient }}</li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+.cocktail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.cocktail-item {
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.2s ease;
+}
+
+.cocktail-item:hover {
+  transform: scale(1.05);
+}
+
+.cocktail-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.filter-container {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.filter-input {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.icon-star {
+  color: gold;
+  font-size: 20px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+
+.icon-star:hover {
+  color: darkorange;
+}
+
+.icon-star {
+  color: gray;
+  font-size: 20px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.icon-star.active {
+  color: gold;
+}

@@ -1,0 +1,60 @@
+.cocktail-detail {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.detail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.back-button {
+  margin-bottom: 20px;
+}
+
+.back-button button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button button:hover {
+  background-color: #0056b3;
+}
+
+.icon-star {
+  font-size: 24px;
+  color: grey;
+  cursor: pointer;
+}
+
+.icon-star.active {
+  color: gold;
+}
+
+.favorite-star {
+  margin-bottom: 20px;
+}
+
+.favorite-star span {
+  display: inline-block;
+  padding: 5px;
+}
